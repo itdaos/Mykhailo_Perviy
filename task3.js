@@ -1,5 +1,16 @@
 function digital_root(num) {
-  return 1
+  if (typeof num !== 'number') return
+
+  const numAsString = num.toString()
+  let sumOfDigits = 0
+  for(let i = 0; i < numAsString.length; i++) {
+    sumOfDigits += Number(numAsString[i])
+  }
+
+  if (sumOfDigits > 9) {
+    return digital_root(sumOfDigits)
+  }
+  return sumOfDigits
 }
 
 const assert = require('assert')
