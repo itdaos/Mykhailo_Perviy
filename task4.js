@@ -1,5 +1,14 @@
 function countPairs(arr, target) {
-  return 0
+  if (!Array.isArray(arr)) return
+  if (target < 0) return
+
+  let counter = 0
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i+1; j < arr.length; j++) {
+      if (arr[i] + arr[j] == target) counter++
+    }
+  }
+  return counter
 }
 
 const assert = require('assert')
