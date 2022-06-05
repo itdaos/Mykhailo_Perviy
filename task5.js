@@ -4,7 +4,7 @@ function transformFriends(friends) {
 
 const assert = require('assert')
 
-describe("task1", () => {
+describe("task5", () => {
   describe("#transformFriends()", () => {
     it('should properly handle test_case 1', () => {
       assert.equal(

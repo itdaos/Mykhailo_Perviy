@@ -4,7 +4,7 @@ function nextBigger(num) {
 
 const assert = require('assert')
 
-describe("task1", () => {
+describe("task6", () => {
   describe("#nextBigger()", () => {
     it('should properly handle test_case 1', () => {
       assert.equal(nextBigger(12), 21)

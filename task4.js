@@ -4,7 +4,7 @@ function countPairs(arr, target) {
 
 const assert = require('assert')
 
-describe("task1", () => {
+describe("task4", () => {
   describe("#countPairs()", () => {
     it('should properly handle test_case 1', () => {
       assert.equal(countPairs([1, 3, 6, 2, 2, 0, 4, 5], 5), 4)

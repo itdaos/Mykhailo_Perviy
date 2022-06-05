@@ -4,7 +4,7 @@ function bit32ToIPv4(repr32) {
 
 const assert = require('assert')
 
-describe("task1", () => {
+describe("task7", () => {
   describe("#bit32ToIPv4()", () => {
     it('should properly handle test_case 1', () => {
       assert.equal(bit32ToIPv4(2149583361), "128.32.10.1")
