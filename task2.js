@@ -1,5 +1,23 @@
 function first_non_repeating_letter(str) {
-  return ""
+  if (typeof str !== "string") return
+  let result = ""
+
+  for (let i = 0; i < str.length - 1; i++) {
+    const char = str[i]
+    let isNotRepeating = true
+    for (let j = i+1; j < str.length; j++) {
+      if (char.toLocaleLowerCase() === str[j].toLocaleLowerCase()) {
+        isNotRepeating = false
+        break
+      }
+    }
+    if (isNotRepeating) {
+      result = char
+      break
+    }
+  }
+
+  return result
 }
 
 const assert = require('assert')
